@@ -6,13 +6,9 @@ from django.views.generic.edit import (
     DeleteView,
 )
 from django.urls import reverse_lazy
-
 from .forms import TaskUpdateForm
 from django.contrib.auth.mixins import LoginRequiredMixin
-
-
 from django.views import View
-
 from .models import Task
 
 
