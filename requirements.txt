@@ -1,6 +1,12 @@
+#general
 django >3.2,<3.3
 python-decouple
 pillow
-django-filter
-markdown
 djangorestframework
+
+# 3rd party
+drf-yasg[validation]
+markdown
+django-filter
+
+# deploy
