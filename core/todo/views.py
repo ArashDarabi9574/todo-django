@@ -29,14 +29,13 @@ class TaskCreate(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(TaskCreate, self).form_valid(form)
-    
+
 
 class TaskUpdate(LoginRequiredMixin, UpdateView):
     model = Task
     success_url = reverse_lazy("task_list")
     form_class = TaskUpdateForm
     template_name = "todo/update_task.html"
-    
 
 
 class TaskComplete(LoginRequiredMixin, View):
