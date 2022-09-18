@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from todo.models import Task
-from accounts.models import Profile
 
 
 class TaskSerializer(serializers.ModelSerializer):

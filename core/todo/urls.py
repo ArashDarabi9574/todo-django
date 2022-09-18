@@ -6,6 +6,7 @@ from .views import (
     TaskUpdate,
     DeleteView,
 )
+
 app_name = "todo"
 
 urlpatterns = [

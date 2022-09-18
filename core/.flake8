@@ -1,3 +1,4 @@
+[flake8]
 exclude =
     .git,
     .gitignore,
@@ -8,3 +9,6 @@ exclude =
     .env
     settings.py,
     __init__,
+    migrations,
+ignore = 
+    E501
