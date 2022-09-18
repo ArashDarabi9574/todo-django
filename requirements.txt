@@ -13,3 +13,9 @@ django-filter
 
 # email
 django-mail-templated
+
+# reformatting and test
+black
+flake8
+pytest
+pytest-django
