@@ -45,13 +45,3 @@ class TestTaskApi:
         response = self.client.post(url, data)
         assert response.status_code == 201
 
-    # def test_create_task_invalid_response_400_status(self,my_user):
-
-    #      url = reverse("todo:api:task_list-list")
-    #      data = {
-
-    #           'created_date': datetime.now(),
-    #      }
-    #      self.client.force_authenticate(user=my_user)
-    #      response = self.client.post(url,data)
-    #      assert response.status_code == 400

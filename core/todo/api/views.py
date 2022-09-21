@@ -19,7 +19,7 @@ class TodoListView(viewsets.ModelViewSet):
     pagination_class = LargeResultsSetPagination
 
 
-# class TodoDetailApiView(viewsets.ModelViewSet):
-#      permission_classes = [IsAuthenticatedOrReadOnly]
-#      serializer_class = TaskSerializer
-#      queryset = Task.objects.all()
+class TodoDetailApiView(viewsets.ModelViewSet):
+     permission_classes = [IsAuthenticatedOrReadOnly]
+     serializer_class = TaskSerializer
+     queryset = Task.objects.all()
