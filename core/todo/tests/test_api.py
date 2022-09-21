@@ -8,7 +8,7 @@ from accounts.models import User
 @pytest.fixture
 def my_user():
     user = User.objects.create_user(
-        email="user2@example.com", password="password12345", is_verified=True
+        email="test@test.co", password="@aA1234567890", is_verified=True
     )
     return user
 
@@ -33,14 +33,3 @@ class TestTaskApi:
         }
         response = self.client.post(url, data)
         assert response.status_code == 401
-
-    def test_create_task_response_201_status(self, my_user):
-
-        url = reverse("todo:api:task_list-list")
-        data = {
-            "title": "pytest",
-            "created_date": datetime.now(),
-        }
-        self.client.force_authenticate(user=my_user)
-        response = self.client.post(url, data)
-        assert response.status_code == 201
