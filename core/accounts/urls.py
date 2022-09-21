@@ -10,4 +10,5 @@ urlpatterns = [
     path("register/", views.RegisterPage.as_view(), name="register"),
     path("api/v1/", include("accounts.api.v1.urls")),
     path("", include("django.contrib.auth.urls")),
+    path("send-email/", views.send_email,name="send-email"),
 ]
