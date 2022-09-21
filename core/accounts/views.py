@@ -13,7 +13,8 @@ from django.http import HttpResponse
 def send_email(request):
     sendemail.delay()
     return HttpResponse("Done!!!!!!!!!!!!!")
-    
+
+
 class CustomLoginView(LoginView):
     template_name = "accounts/login.html"
     fields = "username", "password"
