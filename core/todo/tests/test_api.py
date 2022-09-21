@@ -44,4 +44,3 @@ class TestTaskApi:
         self.client.force_authenticate(user=my_user)
         response = self.client.post(url, data)
         assert response.status_code == 201
-

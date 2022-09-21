@@ -20,6 +20,6 @@ class TodoListView(viewsets.ModelViewSet):
 
 
 class TodoDetailApiView(viewsets.ModelViewSet):
-     permission_classes = [IsAuthenticatedOrReadOnly]
-     serializer_class = TaskSerializer
-     queryset = Task.objects.all()
+    permission_classes = [IsAuthenticatedOrReadOnly]
+    serializer_class = TaskSerializer
+    queryset = Task.objects.all()
