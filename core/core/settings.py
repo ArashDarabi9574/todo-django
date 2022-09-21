@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "accounts",
     "todo",
     "rest_framework",
+    "rest_framework_simplejwt",
     "rest_framework.authtoken",
     "django_filters",
     "drf_yasg",
@@ -165,3 +166,7 @@ EMAIL_HOST = "smtp4dev"
 EMAIL_HOST_USER = ""
 EMAIL_HOST_PASSWORD = ""
 EMAIL_PORT = 25
+
+
+# celery
+CELERY_BROKER_URL = "redis://redis-todo:6379/1"
