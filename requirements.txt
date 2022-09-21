@@ -13,6 +13,7 @@ django-filter
 
 # email
 django-mail-templated
+djangorestframework-simplejwt
 
 # reformatting and test
 black
