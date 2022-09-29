@@ -12,12 +12,13 @@ from django.views.decorators.cache import cache_page
 # Create your views here.
 
 
-@cache_page(60* 20)
+@cache_page(60 * 20)
 def test(req):
     response = requests.get(
-        "https://fe8703fd-70c2-402e-9166-7033a00ee268.mock.pstmn.io/delay/5"
+        "https://api.openweathermap.org/data/2.5/weather?lat=37.27&lon=49.59&appid=9a0fb063095fef94383f2533ffcc278b"
     )
     return JsonResponse(response.json())
+
 
 def send_email(request):
     sendemail.delay()
