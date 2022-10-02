@@ -10,7 +10,7 @@ markdown
 django-filter
 
 # deploy
-
+gunicorn
 # email
 django-mail-templated
 djangorestframework-simplejwt
